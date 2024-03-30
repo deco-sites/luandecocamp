@@ -9,5 +9,5 @@ export default function Coupon({ code, description }: Props) {
       <h2 class="font-sans">{code}</h2>
       <p>{description}</p>
     </div>
-  )
+  );
 }
