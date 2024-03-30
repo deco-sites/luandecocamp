@@ -97,8 +97,10 @@ const manifest = {
     "deco-sites/luandecocamp/sections/Images/ShoppableBanner.tsx": $$$$$$28,
     "deco-sites/luandecocamp/sections/Links/LinkTree.tsx": $$$$$$29,
     "deco-sites/luandecocamp/sections/Links/Shortcuts.tsx": $$$$$$30,
-    "deco-sites/luandecocamp/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$31,
-    "deco-sites/luandecocamp/sections/Miscellaneous/CookieConsent.tsx": $$$$$$32,
+    "deco-sites/luandecocamp/sections/Miscellaneous/CampaignTimer.tsx":
+      $$$$$$31,
+    "deco-sites/luandecocamp/sections/Miscellaneous/CookieConsent.tsx":
+      $$$$$$32,
     "deco-sites/luandecocamp/sections/Miscellaneous/Slide.tsx": $$$$$$33,
     "deco-sites/luandecocamp/sections/Newsletter/Newsletter.tsx": $$$$$$34,
     "deco-sites/luandecocamp/sections/Product/ImageGalleryFrontBack.tsx":
