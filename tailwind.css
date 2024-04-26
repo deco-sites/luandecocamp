@@ -54,3 +54,15 @@
     --dot-progress: 100%
   }
 }
+
+@layer utilities {
+  .max-container {
+    max-width: 1920px;
+  }
+
+  .max-container-auto {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

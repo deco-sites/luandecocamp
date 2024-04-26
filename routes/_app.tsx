@@ -16,6 +16,18 @@ export default defineApp(async (_req, ctx) => {
       {/* Include default fonts and css vars */}
       <Theme />
 
+      {/* font Manrope */}
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin="anonymous"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet"
+      />
+
       {/* Include Icons and manifest */}
       <Head>
         {/* Enable View Transitions API */}
