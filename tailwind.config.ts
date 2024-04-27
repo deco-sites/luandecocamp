@@ -29,7 +29,9 @@ export default {
         },
         grey: {
           40: "#62646C",
+          50: "#797C86",
           70: "#AFB0B6",
+          80: "#CACACE",
           90: "#E4E4E6",
         },
         purple: {

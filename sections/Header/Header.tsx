@@ -21,26 +21,30 @@ interface Props {
 
 export default function Header({ name, menu, button }: Props) {
   return (
-    <header class="bg-dark-3 flex flex-row justify-between max-container-auto border-b border-dark-12 h-[119px]">
-      <span class="w-[125px] border-r border-dark-12" />
+    <header class="bg-dark-3">
+      <div class="max-container-auto flex flex-row justify-between border-b border-dark-12 h-[119px]">
+        <span class="w-[125px] border-r border-dark-12" />
 
-      <a href="/" class="flex">
-        <h1 class="font-semibold text-grey-90 text-3xl self-center">{name}</h1>
-      </a>
+        <a href="/" class="flex">
+          <h1 class="font-semibold text-grey-90 text-3xl self-center">
+            {name}
+          </h1>
+        </a>
 
-      <div />
+        <div />
 
-      <nav class="flex items-end">
-        <ul class="flex items-center justify-center h-[87px] border border-b-0 border-dark-12 rounded-l-xl rounded-r-xl">
-          {menu?.map((item) => <MenuItem key={item.url} {...item} />)}
-        </ul>
-      </nav>
+        <nav class="flex items-end">
+          <ul class="flex items-center justify-center h-[87px] border border-b-0 border-dark-12 rounded-l-xl rounded-r-xl">
+            {menu?.map((item) => <MenuItem key={item.url} {...item} />)}
+          </ul>
+        </nav>
 
-      <div />
+        <div />
 
-      {button && <Button title={button} />}
+        {button && <Button>{button}</Button>}
 
-      <span class="w-[125px] border-l border-dark-12" />
+        <span class="w-[125px] border-l border-dark-12" />
+      </div>
     </header>
   );
 }

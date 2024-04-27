@@ -12,7 +12,7 @@ export default function Slide({
 }: Props) {
   const slideContent = content?.map(({ label, repeat = 1 }) => {
     return (
-      <div class="flex items-center gap-x-10 mx-4 py-4 bg-transparent border border-dark-12">
+      <div class="flex items-center gap-x-10 mx-4 py-4 bg-transparent">
         {Array(repeat).fill(0).map(() => (
           <>
             <span class="text-purple-90 text-lg whitespace-nowrap uppercase">
@@ -37,8 +37,8 @@ export default function Slide({
     );
   });
   return (
-    <div class="bg-transparent relative w-full overflow-hidden h-11">
-      <div class="animate-sliding absolute top-0 left-0 flex flex-nowrap h-11">
+    <div class="bg-transparent relative w-full overflow-hidden h-12">
+      <div class="animate-sliding absolute top-0 left-0 flex flex-nowrap h-12 border border-dark-12">
         {slideContent}
       </div>
     </div>
