@@ -33,6 +33,7 @@ export default {
           70: "#AFB0B6",
           80: "#CACACE",
           90: "#E4E4E6",
+          95: "#F2F2F3",
         },
         purple: {
           55: "#4A2CED",

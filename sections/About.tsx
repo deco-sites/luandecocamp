@@ -2,7 +2,6 @@ import { Button } from "deco-sites/luandecocamp/components/header/Button.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { Box } from "deco-sites/luandecocamp/components/Box.tsx";
-import { BoxRadius } from "deco-sites/luandecocamp/components/ui/BoxRadius.tsx";
 
 interface Props {
   introduction: string;
@@ -51,7 +50,7 @@ export default function About(
 ) {
   return (
     <section class="bg-dark-3">
-      <div class="max-container-auto px-[162px] pt-[200px]">
+      <div class="max-container-auto px-[162px] pt-20">
         <div class="flex flex-row justify-between items-center">
           <div class="flex flex-col gap-1">
             <h2 class="font-semibold text-xl text-grey-50">ABOUT</h2>
@@ -65,7 +64,11 @@ export default function About(
 
         <div class="flex flex-row gap-8 py-20">
           <div class="w-1/2">
-            <Image src={photo} width={783} height={710} />
+            <img
+              src={photo}
+              loading="lazy"
+              class="hover:scale-110 transition-all duration-200"
+            />
           </div>
 
           <div class="w-1/2">

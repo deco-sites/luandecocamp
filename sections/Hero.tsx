@@ -13,9 +13,9 @@ const SLIDE_CONTENT = [
 export default function Hero() {
   return (
     <div class="bg-dark-3">
-      <div class="max-container-auto pt-20 flex flex-col">
+      <div class="max-container-auto flex flex-col">
         <div class="flex flex-row justify-center gap-8">
-          <h2 class="max-w-[400px]">
+          <h2 class="max-w-[400px] self-center">
             <p class="text-grey-40 font-medium text-xl">
               STUNNING PHOTOGRAPHY BY <br />
               <span class="text-white font-semibold text-7xl">
@@ -37,10 +37,10 @@ export default function Hero() {
             />
           </svg>
 
-          <div class="flex flex-col gap-2.5">
+          <div class="flex flex-col gap-2.5 self-center">
             <div class="flex flex-row gap-3">
               <p class="font-semibold text-white text-6xl">LET'S</p>
-              <button class="bg-purple-55 rounded-full px-[50px] py-4">
+              <button class="bg-purple-55 rounded-full px-[50px] py-4 hover:scale-110 transition-all duration-200">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
