@@ -2,6 +2,7 @@ import { Button } from "deco-sites/luandecocamp/components/header/Button.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { Box } from "deco-sites/luandecocamp/components/Box.tsx";
+import { useEffect } from "preact/hooks";
 
 interface Props {
   introduction: string;
@@ -37,9 +38,9 @@ function Title({ children }: { children: React.ReactNode }) {
   );
 }
 
-function Text({ children }: { children: React.ReactNode }) {
+function Text({ children, id }: { children: React.ReactNode; id: string }) {
   return (
-    <p class="text-lg text-grey-70">
+    <p id={id} class="text-lg text-grey-70">
       {children}
     </p>
   );
@@ -54,7 +55,9 @@ export default function About(
         <div class="flex flex-row justify-between items-center">
           <div class="flex flex-col gap-1">
             <h2 class="font-semibold text-xl text-grey-50">ABOUT</h2>
-            <h3 class="font-semibold text-white text-6xl">I AM DAMIEN</h3>
+            <h3 id="title" class="font-semibold text-white text-6xl">
+              I AM DAMIEN
+            </h3>
           </div>
 
           <Button>Know More -&gt;</Button>
@@ -74,7 +77,7 @@ export default function About(
           <div class="w-1/2">
             <Box styles="rounded-b-none p-5">
               <Title>Introduction</Title>
-              <Text>{introduction}</Text>
+              <Text id="introduction">{introduction}</Text>
             </Box>
             <Box styles="rounded-t-none p-5">
               <Title>Contact Information</Title>
