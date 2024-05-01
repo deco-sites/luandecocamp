@@ -56,7 +56,7 @@ export default function About(
           <div class="flex flex-col gap-1">
             <h2 class="font-semibold text-xl text-grey-50">ABOUT</h2>
             <h3 id="title" class="font-semibold text-white text-6xl">
-              I AM DAMIEN
+              I AM LUAN
             </h3>
           </div>
 

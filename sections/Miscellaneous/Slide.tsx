@@ -38,7 +38,7 @@ export default function Slide({
   });
   return (
     <div class="bg-transparent relative w-full overflow-hidden h-12">
-      <div class="animate-sliding absolute top-0 left-0 flex flex-nowrap h-12 border border-dark-12">
+      <div class="animate-sliding absolute top-0 left-0 flex flex-nowrap h-12 border border-dark-12 bg-dark-6">
         {slideContent}
       </div>
     </div>

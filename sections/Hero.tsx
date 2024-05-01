@@ -1,6 +1,6 @@
 import Slide from "deco-sites/luandecocamp/sections/Miscellaneous/Slide.tsx";
 
-const SLIDE_CONTENT = [
+export const SLIDE_CONTENT = [
   { label: "Event Photography", repeat: 1 },
   { label: "Comercial Photography", repeat: 1 },
   { label: "Product Photography", repeat: 1 },
@@ -19,7 +19,7 @@ export default function Hero() {
             <p class="text-grey-40 font-medium text-xl">
               STUNNING PHOTOGRAPHY BY <br />
               <span class="text-white font-semibold text-7xl">
-                DAMIEN BRAUN
+                LUAN LEMOS
               </span>
             </p>
           </h2>
