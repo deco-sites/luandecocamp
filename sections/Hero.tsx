@@ -14,11 +14,11 @@ export default function Hero() {
   return (
     <div class="bg-dark-3">
       <div class="max-container-auto flex flex-col">
-        <div class="flex flex-row justify-center gap-8">
-          <h2 class="max-w-[400px] self-center">
+        <div class="flex flex-col lg:flex-row justify-center gap-8">
+          <h2 class="max-w-[400px] self-center pt-4">
             <p class="text-grey-40 font-medium text-xl">
               STUNNING PHOTOGRAPHY BY <br />
-              <span class="text-white font-semibold text-7xl">
+              <span class="text-white font-semibold text-5xl lg:text-7xl">
                 LUAN LEMOS
               </span>
             </p>
@@ -29,6 +29,7 @@ export default function Hero() {
             width="346"
             height="328"
             fill="none"
+            class="hidden lg:block"
           >
             <path
               fill="#0E0E10"
@@ -37,7 +38,7 @@ export default function Hero() {
             />
           </svg>
 
-          <div class="flex flex-col gap-2.5 self-center">
+          <div class="flex flex-col gap-2.5 self-center px-4">
             <div class="flex flex-row gap-3">
               <p class="font-semibold text-white text-6xl">LET'S</p>
               <button class="bg-purple-55 rounded-full px-[50px] py-4 hover:scale-110 transition-all duration-200">

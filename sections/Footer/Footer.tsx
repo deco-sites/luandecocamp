@@ -14,11 +14,13 @@ interface Props {
 export default function Footer({ menu }: Props) {
   return (
     <footer class="bg-dark-3 pt-20">
-      <p class="text-dark-15 font-bold text-9xl text-center pb-8">LUAN LEMOS</p>
+      <p class="text-dark-15 font-bold text-7xl lg:text-9xl text-center pb-8">
+        LUAN LEMOS
+      </p>
       <Slide content={SLIDE_CONTENT} />
 
-      <div class="max-container-auto px-[162px]">
-        <div class="border-l border-r border-b border-dark-12 flex flex-row">
+      <div class="max-container-auto lg:px-[162px] px-4">
+        <div class="border-l border-r border-b border-dark-12 flex flex-col lg:flex-row">
           <div class="flex-1 flex flex-col gap-8 p-12">
             <p class="uppercase text-grey-50 font-semibold text-xl">
               A more meaningful home for photography
@@ -47,7 +49,7 @@ export default function Footer({ menu }: Props) {
             </div>
           </div>
 
-          <div class="border-l border-dark-12 flex flex-col items-center gap-8 p-12">
+          <div class="hidden lg:flex border-l border-dark-12 flex-col items-center gap-8 p-12">
             <ul class="flex flex-row justify-between gap-14">
               {menu.map((item) => (
                 <li class="flex flex-col gap-5">
@@ -67,8 +69,8 @@ export default function Footer({ menu }: Props) {
           </div>
         </div>
 
-        <div class="flex justify-between py-10">
-          <div class="flex flex-row gap-2.5">
+        <div class="flex flex-col lg:flex-row justify-between py-10">
+          <div class="flex flex-col lg:flex-row gap-2.5">
             <a href="/" class="text-grey-50 text-lg">Terms & Conditions</a>
             <hr class="border border-dark-12 h-full" />
             <a href="/" class="text-grey-50 text-lg">Privacy Policy</a>

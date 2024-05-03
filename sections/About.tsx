@@ -21,7 +21,7 @@ interface Props {
 
 function Title({ children }: { children: React.ReactNode }) {
   return (
-    <h3 class="flex flex-row gap-2.5 font-medium text-grey-80 text-3xl pb-5">
+    <h3 class="flex flex-row gap-2.5 font-medium text-grey-80 text-2xl lg:text-3xl pb-5">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="39"
@@ -51,8 +51,8 @@ export default function About(
 ) {
   return (
     <section class="bg-dark-3">
-      <div class="max-container-auto px-[162px] pt-20">
-        <div class="flex flex-row justify-between items-center">
+      <div class="max-container-auto lg:px-[162px] pt-10 lg:pt-20">
+        <div class="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between items-center">
           <div class="flex flex-col gap-1">
             <h2 class="font-semibold text-xl text-grey-50">ABOUT</h2>
             <h3 id="title" class="font-semibold text-white text-6xl">
@@ -65,8 +65,8 @@ export default function About(
 
         <hr class="w-full bg-dark-6 mt-12" />
 
-        <div class="flex flex-row gap-8 py-20">
-          <div class="w-1/2">
+        <div class="flex flex-col lg:flex-row gap-4 lg:gap-8 py-10 lg:py-20 px-4 lg:px-0">
+          <div class="lg:w-1/2">
             <img
               src={photo}
               loading="lazy"
@@ -74,7 +74,7 @@ export default function About(
             />
           </div>
 
-          <div class="w-1/2">
+          <div class="lg:w-1/2">
             <Box styles="rounded-b-none p-5">
               <Title>Introduction</Title>
               <Text id="introduction">{introduction}</Text>
@@ -82,7 +82,7 @@ export default function About(
             <Box styles="rounded-t-none p-5">
               <Title>Contact Information</Title>
 
-              <div class="flex flex-row justify-between">
+              <div class="flex flex-col gap-2.5 lg:gap-0 lg:flex-row justify-between">
                 <div class="w-1/2 flex flex-col gap-2.5">
                   <p class="font-medium text-lg text-grey-90">Email</p>
                   <p class="text-xl text-grey-70">
@@ -92,7 +92,7 @@ export default function About(
                   </p>
                 </div>
 
-                <div class="w-1/2 flex flex-col gap-2.5">
+                <div class="lg:w-1/2 flex flex-col gap-2.5">
                   <p class="font-medium text-lg text-grey-90">Phone Number</p>
                   <p class="text-xl text-grey-70">
                     <a href={`tel:${contact.phone}`}>

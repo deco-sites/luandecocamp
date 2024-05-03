@@ -11,26 +11,26 @@ interface Props {
 export default function Services({ description, highlights, image }: Props) {
   return (
     <section class="bg-dark-3">
-      <div class="max-container-auto px-[162px] pt-20">
-        <div class="flex flex-row justify-between items-center pb-12 border-b border-dark-12">
+      <div class="max-container-auto lg:px-[162px] px-4 pt-10 lg:pt-20">
+        <div class="flex flex-col lg:flex-row justify-between items-center pb-12 border-b border-dark-12">
           <div class="flex flex-col gap-1">
             <h3 class="text-grey-50 font-semibold text-xl">SERVICES</h3>
-            <h4 class="text-white font-semibold text-6xl self-end">
+            <h4 class="text-white font-semibold text-4xl lg:text-6xl self-end">
               MY PHOTOGRAPHY SERVICES
             </h4>
           </div>
 
-          <Button styles="!self-end">View All Services -&gt;</Button>
+          <Button styles="!self-end pt-4">View All Services -&gt;</Button>
         </div>
 
-        <div class="flex flex-row gap-12 items-center justify-between pt-20">
-          <div class="w-1/2 gap-12">
+        <div class="flex flex-col lg:flex-row gap-12 items-center justify-between pt-10 lg:pt-20">
+          <div class="lg:w-1/2 gap-12">
             <h3 class="text-grey-50 font-semibold text-5xl">Events</h3>
             <p class="text-grey-50 text-lg pt-5">
               {description}
             </p>
 
-            <div class="pt-12 flex flex-col">
+            <div class="pt-6 lg:pt-12 flex flex-col">
               <h3 class="text-grey-80 font-semibold text-lg pt-6 pb-4">
                 Services Highlights
               </h3>
@@ -43,6 +43,7 @@ export default function Services({ description, highlights, image }: Props) {
                       width="40"
                       height="40"
                       fill="none"
+                      class="hidden lg:block"
                     >
                       <path
                         fill="#AFA1F7"
@@ -52,7 +53,7 @@ export default function Services({ description, highlights, image }: Props) {
                       />
                     </svg>
 
-                    <p class="text-grey-70 text-lg">
+                    <p class="text-grey-70 lg:text-lg">
                       {highlight}
                     </p>
                   </Box>
@@ -61,7 +62,7 @@ export default function Services({ description, highlights, image }: Props) {
             </div>
           </div>
 
-          <div class="w-1/2">
+          <div class="lg:w-1/2">
             <img
               src={image}
               loading="lazy"
